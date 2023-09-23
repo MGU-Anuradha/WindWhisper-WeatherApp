@@ -3,7 +3,7 @@ import './WeatherApp.css'
 import clear_icon from '../images/clear_icon.png';
 import cloud_icon from '../images/cloud_icon.png';
 import drizzle_icon from '../images/drizzle_icon.png';
-import humidity_icon from '../images/clear_icon.png';
+import humidity_icon from '../images/humidity_icon.png';
 import rain_icon from '../images/rain_icon.png';
 import snow_icon from '../images/snow_icon.png';
 import wind_icon from '../images/wind_icon.png';
@@ -85,14 +85,14 @@ export const WeatherApp = () => {
 
         <div className="data-container">
             <div className="element">
-                <img src="" alt="" />
+                <img src={humidity_icon} alt="" />
                 <div className="data">
                     <div className="humidity-percent">64%</div>
                     <div className="text">Humidity</div>
                 </div>
             </div>
             <div className="element">
-                <img src="" alt="" />
+                <img src={wind_icon} alt="" />
                 <div className="data">
                     <div className="wind-rate">18 km/h</div>
                     <div className="text">Wind Speed</div>
