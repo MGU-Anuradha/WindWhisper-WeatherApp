@@ -13,6 +13,7 @@ export const WeatherApp = () => {
     if(element[0].value===""){
         return 0;
     }
+    let url="https://api.openweathermap.org/data/2.5/weather?q=London&units=Metric&appid=599c3a74f4e10186d64b434f65a31b98"
   }
 
   return (
