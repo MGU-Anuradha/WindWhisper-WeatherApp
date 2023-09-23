@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons"; 
 
 export const WeatherApp = () => {
+
+    let api_key = "599c3a74f4e10186d64b434f65a31b98";
+
   return (
     <div className='container'>
 
