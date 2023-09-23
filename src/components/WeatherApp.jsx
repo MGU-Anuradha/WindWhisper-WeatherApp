@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import './WeatherApp.css'
-import mainImage from '../images/image1.jpg';
+import clear_icon from '../images/clear_icon.png';
+import cloud_icon from '../images/cloud_icon.png';
+import drizzle_icon from '../images/drizzle_icon.png';
+import humidity_icon from '../images/clear_icon.png';
+import rain_icon from '../images/rain_icon.png';
+import snow_icon from '../images/snow_icon.png';
+import wind_icon from '../images/wind_icon.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons"; 
 
