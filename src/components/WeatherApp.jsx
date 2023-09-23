@@ -6,14 +6,21 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export const WeatherApp = () => {
 
-    let api_key = "599c3a74f4e10186d64b434f65a31b98";
+  let api_key = "599c3a74f4e10186d64b434f65a31b98";
+
+  const search = () =>{
+    const element = document.getElementsByClassName("cityInput");
+    if(element[0].value===""){
+        return 0;
+    }
+  }
 
   return (
     <div className='container'>
 
         <div className="top-bar">
             <input type="text" className="cityInput" placeholder='Search City'/>
-            <div className="search-icon">
+            <div className="search-icon" onClick={()=>{search()}}>
                 <FontAwesomeIcon icon={faSearch} className='custom-icon'/> 
                 {<FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />}
             </div>
