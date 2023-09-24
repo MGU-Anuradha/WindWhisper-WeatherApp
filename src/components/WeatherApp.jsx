@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './WeatherApp.css'
+
+import { Container } from '../styles/Background.jsx';
 import clear_icon from '../images/clear_icon.png';
 import cloud_icon from '../images/cloud_icon.png';
 import drizzle_icon from '../images/drizzle_icon.png';
@@ -65,8 +67,8 @@ export const WeatherApp = () => {
 
 
   return (
-    <div className='container'>
-
+    <Container>
+    <div className="container">
         <div className="top-bar">
             <input type="text" className="cityInput" placeholder='Search City'/>
             <div className="search-icon" onClick={()=>{search()}}>
@@ -99,7 +101,7 @@ export const WeatherApp = () => {
                 </div>
             </div>
         </div>
-
-    </div>
+        </div>
+    </Container>
   )
 }
