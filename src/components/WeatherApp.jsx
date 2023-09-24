@@ -70,7 +70,7 @@ export const WeatherApp = () => {
     <Container>
     <div className="container">
         <div className="top-bar">
-            <input type="text" className="cityInput" placeholder='Search City'/>
+            <input type="text" className="cityInput" placeholder='Search'/>
             <div className="search-icon" onClick={()=>{search()}}>
                 <FontAwesomeIcon icon={faSearch} className='custom-icon'/> 
                 {<FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />}
