@@ -14,20 +14,24 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export const WeatherApp = () => {
 
-  let api_key = "599c3a74f4e10186d64b434f65a31b98";
+  let api_key = "599c3a74f4e10186d64b434f65a31b98"; //store OpenWeatherMap API key.
 
   const [wicon, setWicon] = useState(cloud_icon);
 
+  //Function to location search
   const search = async () =>{
     const element = document.getElementsByClassName("cityInput");
-    if(element[0].value===""){
+    if(element[0].value===""){ 
         return 0;
     }
+
+    //fetch weather data from the OpenWeatherMap API
     let url=`https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
 
     let response = await fetch(url);
     let data = await response.json();
 
+    // update content with weather-related information obtained from the OpenWeatherMap API response.
     const humidity = document.getElementsByClassName("humidity-percent");
     const wind = document.getElementsByClassName("wind-rate"); 
     const temperate = document.getElementsByClassName("weather-temp");

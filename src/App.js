@@ -1,7 +1,7 @@
 
 import './App.css';
 import { WeatherApp } from './components/WeatherApp';
-import background from './images/background.jpg';
+
 
 function App() {
   return (
