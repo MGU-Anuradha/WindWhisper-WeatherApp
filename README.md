@@ -1,6 +1,6 @@
 # Weather App with React.js
 
-A simple weather application built with React.js that fetches and displays weather information for a given location using the OpenWeatherMap API.
+A simple weather application built with React.js that fetches and displays weather information for a given location using the OpenWeatherMap API. This application is hosted using Netlify Platform.
 
 ## Features
 
